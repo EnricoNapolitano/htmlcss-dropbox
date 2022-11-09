@@ -101,3 +101,46 @@ header.navbar > .col {
     border: 2px dashed black;
     height:662px;
 }
+/* * MAIN */
+main {
+    padding-bottom: 200px;
+}
+main > div:first-child {
+    border: 2px dashed green;
+    margin-top: 135px;
+}
+.fattura {
+    display: inline-block;
+    padding:0 50px 30px 0;
+}
+.trial {
+    border: 2px dashed green;
+    height: 1025px;
+}
+div.trial > .col {
+    border: 2px dashed blue;
+    flex: 0 1 300px;
+    height: 955px;
+}
+div.trial .member {
+    text-align: center;
+}
+.lil-title {
+    text-align: center;
+}
+.double-col {
+    border: 2px dashed green;
+    min-height: 217px;
+}
+.double-col > div:first-child {
+    border: 2px dashed blue;
+    flex: 1 0 650px;
+}
+.double-col > div:last-child {
+    border: 2px dashed blue;
+    flex: 0 1 350px;
+}
+.space-n-title {
+    border: 2px dashed green;
+    padding: 70px 0;
+}
