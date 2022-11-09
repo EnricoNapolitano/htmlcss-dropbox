@@ -31,18 +31,31 @@ h2 {
     font-weight: 700;
     padding: 36px 0;
 }
+p {
+    padding: 40px 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
 /*? UTILS */
+.m-bottom {
+    margin-bottom: 100px;
+}
 .bg-light-blue {
     background-color: var(--light-blue);
 }
 .big-container {
     max-width: 1225px;
-    flex: 1 0 1225px;
+    flex: 0 1 1225px;
     margin: 0 auto;
 }
 .small-container{
     max-width: 1000px;
-    flex: 1 0 1000px;
+    flex: 0 1 1000px;
     margin: 0 auto;
 }
 .big-col {
@@ -54,6 +67,21 @@ h2 {
     border: 2px dashed blue;
     flex: 0 0 387px;
     height: 428px;
+}
+.btn {
+    background-color: var(--blue);
+    color: white;
+    padding: 10px 15px;
+}
+.circle {
+    height: 18px;
+    width: 18px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin: 0px 6px 0 0;
+}
+.brdr-blue {
+    border: 5px solid var(--blue);
 }
 .flex {
     display: flex;
@@ -92,20 +120,44 @@ h2 {
 header.navbar {
     background-color:white;
     height: 80px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 1;
 }
 header.navbar > .col {
     border: 2px dashed black;
-    flex-basis: 600px;
+    flex: 0 1 600px;
     align-self: stretch;
+}
+header li {
+    padding: 0 22px;
+    font-weight: 400;
 }
 /** JUMBOTRON */
 .jumbotron {
     background-color: var(--light-blue);
-    height: 740px;
+    min-height: 740px;
+    margin-top: 80px;
 }
 .jum-content {
     border: 2px dashed black;
     height:662px;
+}
+.fa-arrow-down{
+    font-size: 50px;
+    padding-top: 20px;
+}
+header.jumbotron .big-col {
+    position: relative;
+}
+header.jumbotron .big-col img {
+    display: block;
+    position: absolute;
+    max-width: 879px;
+    right: -27px;
+    top: 39px;
 }
 /** MAIN */
 main {
@@ -116,7 +168,6 @@ section.small-container > div:first-child {
     margin-top: 135px;
 }
 .fattura {
-    display: inline-block;
     padding:0 50px 30px 0;
 }
 .trial {
@@ -194,7 +245,6 @@ footer {
     background-color: black;
     min-height: 570px;
 }
-
 footer div.big-container > div {
     border: 2px dashed white;
     flex: 1 0 calc(100% / 5);
