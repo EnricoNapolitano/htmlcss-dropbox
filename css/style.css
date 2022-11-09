@@ -42,6 +42,16 @@ h2 {
     flex: 1 0 1000px;
     margin: 0 auto;
 }
+.big-col {
+    border: 2px dashed blue;
+    flex: 0 0 820px;
+    height: 428px;
+}
+.small-col {
+    border: 2px dashed blue;
+    flex: 0 0 387px;
+    height: 428px;
+}
 .flex {
     display: flex;
 }
@@ -81,4 +91,13 @@ header.navbar > .col {
     border: 2px dashed black;
     flex-basis: 600px;
     align-self: stretch;
+}
+/** JUMBOTRON */
+.jumbotron {
+    background-color: var(--light-blue);
+    height: 740px;
+}
+.jum-content {
+    border: 2px dashed black;
+    height:662px;
 }
