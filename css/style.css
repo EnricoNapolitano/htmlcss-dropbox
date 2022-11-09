@@ -1,0 +1,22 @@
+/* !CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/* ? COLOR PALETTE */
+:root {
+    --blue: #0061FF;
+    --light-blue: #B4D0E7;
+    --desit-green:#A2D39B;
+    --desit-light-green:#D1E9CD;
+    --uf-blu: #0093CE;
+    --asu-red: #61082B;
+    --topps-red: #FF1C1C;
+    --desit-grey: #F5F5F5;
+    --wbr-red: #D5001F;
+    --lp-blue: #0D2481;
+    --hc-blue: #B4D0E7;
+    --cc-yellow: #FFD830;
+}
