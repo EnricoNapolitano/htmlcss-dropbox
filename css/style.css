@@ -32,6 +32,9 @@ h2 {
     padding: 36px 0;
 }
 /*? UTILS */
+.bg-light-blue {
+    background-color: var(--light-blue);
+}
 .big-container {
     max-width: 1225px;
     flex: 1 0 1225px;
@@ -82,6 +85,9 @@ h2 {
 .ai-stretch {
     align-items: stretch;
 }
+.wrap {
+    flex-wrap: wrap;
+}
 /** HEADER */
 header.navbar {
     background-color:white;
@@ -101,11 +107,11 @@ header.navbar > .col {
     border: 2px dashed black;
     height:662px;
 }
-/* * MAIN */
+/** MAIN */
 main {
     padding-bottom: 200px;
 }
-main > div:first-child {
+section.small-container > div:first-child {
     border: 2px dashed green;
     margin-top: 135px;
 }
@@ -142,5 +148,47 @@ div.trial .member {
 }
 .space-n-title {
     border: 2px dashed green;
-    padding: 70px 0;
+    padding: 50px 0;
+}
+.db-business {
+    border: 2px dashed green;
+    min-height: 1052px;
+}
+
+.db-business > div {
+    border: 2px dashed blue;
+    flex: 0 1 calc(100% / 3);
+    min-height: 526px;
+}
+.info-clients {
+    border: 2px dashed green;
+    min-height: 293px;
+}
+
+.info-clients > a {
+    display: block;
+    margin: 22px 0 130px;
+}
+/** PORTFOLIO CLIENTS */
+.portfolio-clients {
+    border: 2px dashed red;
+    min-height: 636px;
+}
+.portfolio-clients > div {
+    border: 2px dashed black;
+    flex: 0 1 calc(100% /3)
+}
+.clients > div {
+    border: 2px dashed blue;
+    flex: 0 1 calc(100% / 2);
+}
+/** FREE TRIAL */
+.bg-light-blue > div {
+    min-height: 360px;
+}
+
+/** FREQUENT QUESTIONS */
+.frq-quest > div {
+    border: 2px dashed green;
+    min-height: 105px;
 }
