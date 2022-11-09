@@ -154,7 +154,6 @@ div.trial .member {
     border: 2px dashed green;
     min-height: 1052px;
 }
-
 .db-business > div {
     border: 2px dashed blue;
     flex: 0 1 calc(100% / 3);
@@ -164,12 +163,11 @@ div.trial .member {
     border: 2px dashed green;
     min-height: 293px;
 }
-
 .info-clients > a {
     display: block;
     margin: 22px 0 130px;
 }
-/** PORTFOLIO CLIENTS */
+/* PORTFOLIO CLIENTS */
 .portfolio-clients {
     border: 2px dashed red;
     min-height: 636px;
@@ -182,13 +180,27 @@ div.trial .member {
     border: 2px dashed blue;
     flex: 0 1 calc(100% / 2);
 }
-/** FREE TRIAL */
+/* FREE TRIAL */
 .bg-light-blue > div {
     min-height: 360px;
 }
-
-/** FREQUENT QUESTIONS */
+/* FREQUENT QUESTIONS */
 .frq-quest > div {
     border: 2px dashed green;
     min-height: 105px;
+}
+/* *FOOTER */
+footer {
+    background-color: black;
+    min-height: 570px;
+}
+
+footer div.big-container > div {
+    border: 2px dashed white;
+    flex: 1 0 calc(100% / 5);
+    min-height: 450px;
+}
+footer div:last-child {
+    border: 2px dashed white;
+    min-height: 124px;
 }
