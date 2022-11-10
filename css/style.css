@@ -50,9 +50,19 @@ a.u-line {
     text-decoration: underline;
     color:blue;
 }
+img {
+    max-width: 100%;
+    display: block;
+}
 /*? UTILS */
 .mt-50 {
     margin-top: 50px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.ml-30 {
+    margin-left: 30px;
 }
 .mb-100 {
     margin-bottom: 100px;
@@ -65,6 +75,9 @@ a.u-line {
 }
 .mb-10 {
     margin-bottom: 10px;
+}
+.mr-30 {
+    margin-right: 30px;
 }
 .mr-5 {
     margin-right: 5px;
@@ -104,6 +117,11 @@ a.u-line {
     color: white;
     padding: 10px 15px;
 }
+.b-white {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
 .circle {
     height: 18px;
     width: 18px;
@@ -113,6 +131,9 @@ a.u-line {
 }
 .brdr-blue {
     border: 5px solid var(--blue);
+}
+.brdr-grey {
+    border: 1px solid var(--custom-grey);
 }
 .small-line {
     width: 50px;
@@ -189,11 +210,6 @@ header li {
     font-size: 50px;
     padding-top: 20px;
 }
-section.jumbotron .col-70 img {
-    display: block;
-    margin-top: 40px;
-    max-width: 100%;
-}
 /** MAIN */
 main {
     padding-bottom: 200px;
@@ -215,13 +231,10 @@ div.trial > .col {
     flex: 0 1 300px;
     height: 955px;
 }
-div.trial .member {
+main .member {
     text-align: center;
     padding: 10px 0;
     border-bottom: 1px solid var(--custom-grey);
-}
-.trial .col section {
- margin: 40px 0 0 30px;
 }
 .trial .col section li {
     margin-bottom: 10px;
