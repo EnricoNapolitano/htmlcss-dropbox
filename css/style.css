@@ -310,6 +310,9 @@ main .member {
     flex: 0 0 calc(100% / 2);
     height: 50%;
 }
+.central-box {
+    background-color: var(--desit-grey);
+}
 #designit {
     background-color: var(--desit-green);
 }
