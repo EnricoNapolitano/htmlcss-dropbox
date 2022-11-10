@@ -358,12 +358,15 @@ footer {
     color: white;
     min-height: 570px;
 }
-footer div.big-container > div {
+footer .navbar {
     flex: 1 0 calc(100% / 5);
-    min-height: 450px;
+    min-height: 440px;
 }
 footer div:last-child {
     min-height: 124px;
+}
+footer .line {
+    margin: 25px 0;
 }
 footer span {
     display: inline-block;
