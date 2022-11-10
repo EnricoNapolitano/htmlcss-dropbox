@@ -39,6 +39,10 @@ h3 {
 p {
     padding: 40px 0;
 }
+.client-portfolio p {
+    padding: 0;
+    margin-bottom: 40px;
+}
 li {
     list-style: none;
 }
@@ -61,6 +65,9 @@ img {
 .mt-40 {
     margin-top: 40px;
 }
+.ml-50 {
+    margin-left: 50px;
+}
 .ml-30 {
     margin-left: 30px;
 }
@@ -75,6 +82,9 @@ img {
 }
 .mb-10 {
     margin-bottom: 10px;
+}
+.mr-50 {
+    margin-right: 50px;
 }
 .mr-30 {
     margin-right: 30px;
@@ -135,10 +145,13 @@ img {
 .brdr-grey {
     border: 1px solid var(--custom-grey);
 }
-.small-line {
-    width: 50px;
+.line {
+    width: 100px;
     margin: 45px 0;
     border-bottom: 1px solid var(--custom-grey);
+}
+.small {
+    width: 50px;
 }
 .flex {
     display: flex;
@@ -279,16 +292,16 @@ main .member {
     display: block;
     margin: 22px 0 130px;
 }
-/* PORTFOLIO CLIENTS */
-.portfolio-clients {
+/* CLIENT PORTFOLIO */
+.client-portfolio {
     border: 2px dashed red;
     min-height: 636px;
 }
-.portfolio-clients > div {
+.client-portfolio > div {
     border: 2px dashed black;
     flex: 0 1 calc(100% /3)
 }
-.clients > div {
+.client > div {
     border: 2px dashed blue;
     flex: 0 1 calc(100% / 2);
 }
