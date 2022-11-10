@@ -258,6 +258,10 @@ main .member {
     border: 2px dashed green;
     padding: 50px 0;
 }
+/* DROPBOX BUSINESS */
+.db-business p {
+    padding: 0;
+}
 .db-business {
     border: 2px dashed green;
     min-height: 1052px;
