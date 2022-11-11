@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 /*? COLOR PALETTE */
 :root {
     --blue: #0061FF;
@@ -63,6 +66,17 @@ footer a {
 img {
     max-width: 100%;
     display: block;
+}
+/*? FONT-AWESOME */
+.fa-check {
+    color: var(--blue);
+}
+.fa-arrow-down {
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.fa-angle-up {
+    display: none;
 }
 /*? UTILS */
 .mt-50 {
@@ -146,7 +160,7 @@ img {
 header nav a.btn {
     padding: 6px 15px;
 }
-.b-white {
+.btn.white {
     background-color: white;
     color: black;
 }
@@ -156,6 +170,7 @@ header nav a.btn {
     border: 1px solid grey;
     border-radius: 50%;
     margin: 0px 6px 0 0;
+    cursor: pointer;
 }
 .brdr-black {
     border: 1px solid black;
@@ -207,9 +222,33 @@ header nav a.btn {
 .wrap {
     flex-wrap: wrap;
 }
-/* ? UTILS FONT-AWESOME */
-.fa-check {
-    color: var(--blue);
+/* ? PSEUDO ELEMENT */
+.client div:hover, .btn:hover {
+    opacity: 0.8;
+}
+.client div:hover img{
+    transform: scale(1.3);
+}
+header li.undr-line:hover {
+    border-bottom: 2px solid black;
+}
+.fa-arrow-down:hover {
+    transform: scale(1.5);
+}
+.frq-quest > div:hover .fa-angle-down {
+    display: none;
+}
+.frq-quest > div:hover .fa-angle-up {
+    display: inline;
+}
+.frq-quest > div:hover p {
+    display: block;
+}
+.frq-quest > div:hover {
+    padding-bottom: 0px;
+}
+footer li:hover {
+    text-decoration: underline;
 }
 /** HEADER */
 header.navbar {
@@ -229,6 +268,10 @@ header.navbar > .col {
 header li {
     padding: 0 22px;
     font-weight: 400;
+}
+header li.undr-line {
+    line-height: 80px;
+    vertical-align: middle;
 }
 /** JUMBOTRON */
 .jumbotron {
@@ -278,9 +321,6 @@ main .member {
 .double-col > div:last-child {
     flex: 0 1 350px;
 }
-.space-n-title {
-    padding: 50px 0;
-}
 /* DROPBOX BUSINESS */
 .db-business p {
     padding: 0 36px 0 0;
@@ -301,17 +341,18 @@ main .member {
 }
 /* CLIENT PORTFOLIO */
 .client-portfolio {
-    min-height: 636px;
+    height: calc(100vw/3);
 }
 .client-portfolio > div {
-    flex: 0 1 calc(100% /3)
+    flex: 0 1 calc(100% /3);
 }
 .client > div {
-    flex: 0 0 calc(100% / 2);
-    height: 50%;
+    flex: 0 0 calc(100%/2);
+    height: calc(100vw/2/3);
 }
 .central-box {
     background-color: var(--desit-grey);
+    overflow-y: scroll;
 }
 #designit {
     background-color: var(--desit-green);
@@ -327,7 +368,7 @@ main .member {
 }
 .client img {
     width: 50%;
-    filter: invert();
+    filter: invert(1);
 }
 #world {
     background-color: var(--wbr-red);
@@ -354,6 +395,9 @@ main .member {
 }
 .frq-quest > div:last-child {
     border-bottom: 2px solid var(--custom-grey);
+}
+.frq-quest p {
+    display: none;
 }
 /* *FOOTER */
 footer {
