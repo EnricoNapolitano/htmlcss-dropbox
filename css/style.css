@@ -223,17 +223,17 @@ header nav a.btn {
     flex-wrap: wrap;
 }
 /* ? PSEUDO ELEMENT */
-.client div:hover, .btn:hover {
+.btn:hover {
     opacity: 0.8;
-}
-.client div:hover img{
-    transform: scale(1.3);
 }
 header li.undr-line:hover {
     border-bottom: 2px solid black;
 }
 .fa-arrow-down:hover {
     transform: scale(1.5);
+}
+.client .brdr-effect:hover {
+    border: 20px solid rgba(255,255,255,0.5);
 }
 .frq-quest > div:hover .fa-angle-down {
     display: none;
@@ -333,18 +333,22 @@ main .member {
     min-height: 526px;
 }
 .info-clients {
-    min-height: 293px;
+    min-height: 40vh;
 }
 .info-clients > a {
     display: block;
     margin: 22px 0 130px;
 }
 /* CLIENT PORTFOLIO */
+.client img {
+    width: 70%;
+    filter: invert(1);
+}
 .client-portfolio {
     height: calc(100vw/3);
 }
 .client-portfolio > div {
-    flex: 0 1 calc(100% /3);
+    flex: 0 1 calc(100%/3);
 }
 .client > div {
     flex: 0 0 calc(100%/2);
@@ -354,33 +358,45 @@ main .member {
     background-color: var(--desit-grey);
     overflow-y: scroll;
 }
-#designit {
+.designit {
     background-color: var(--desit-green);
+    border: 20px solid transparent;
+    transition: border 0.5s;
 }
-#asu {
+.asu {
     background-color: var(--asu-red);
+    border: 20px solid transparent;
+    transition: border 0.5s;
 }
-#uf {
+.uf {
     background-color: var(--uf-blu);
+    border: 20px solid transparent;
+    transition: border 0.5s;
 }
-#topps {
+.topps {
     background-color: var(--topps-red);
+    border: 20px solid transparent;
+    transition: border 0.5s;
 }
-.client img {
-    width: 50%;
-    filter: invert(1);
-}
-#world {
+.world {
     background-color: var(--wbr-red);
+    border: 20px solid transparent;
+    transition: border 0.5s;
 }
-#hearst {
+.hearst {
     background-color: var(--hc-blue);
+    border: 20px solid transparent;
+    transition: border 0.5s;
 }
-#lonely-planet {
+.lonely-planet {
     background-color: var(--lp-blue);
+    border: 20px solid transparent;
+    transition: border 0.5s;
 }
-#clear-channel {
+.clear-channel {
     background-color: var(--cc-yellow);
+    border: 20px solid transparent;
+    transition: border 0.5s;
 }
 /* FREE TRIAL */
 .bg-light-blue > div {
